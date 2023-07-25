@@ -1,0 +1,11 @@
+package com.spring.annotatios;
+
+public class Master implements MasterInterface{
+
+	
+	@Override
+	public void name () {
+		System.out.println("I'm Master");
+	}
+	
+}

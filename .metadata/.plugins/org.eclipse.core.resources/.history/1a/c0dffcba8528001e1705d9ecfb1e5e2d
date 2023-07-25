@@ -1,0 +1,11 @@
+package com.spring.annotations;
+
+
+public class TennisSport implements SportInterface{
+
+	@Override
+	public void mysport() {
+		
+	}
+		
+}

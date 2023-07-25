@@ -1,0 +1,55 @@
+package com.spring.withoutXML;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.objenesis.instantiator.annotations.Instantiator;
+import org.springframework.stereotype.Component;
+
+import com.spring.annotations.SportInterface;
+
+@Component
+
+public class Master implements MasterInterface{
+	
+	/*@Autowired
+	@Qualifier("student")
+	private CompanyInterface co;*/
+	private SportInterface spotInterface;
+	
+	
+	/*@Autowired
+	public Master(CompanyInterface co) {
+		this.co = co;
+	}*/
+	
+	/*@Autowired
+	public Master(SportInterface spotInterface) {
+		this.spotInterface = spotInterface;
+	}*/
+
+	@Override
+	public void name () {
+		System.out.println("I'm Master");
+		//co.display();
+	}
+
+	/*public SportInterface getSpotInterface() {
+		return spotInterface;
+	}
+
+	@Autowired
+	public void setSpotInterface(SportInterface spotInterface) {
+		this.spotInterface = spotInterface;
+	}*/
+
+	@Override
+	public void call() {
+		
+	}
+
+	@Override
+	public void callmysport() {
+		spotInterface.mysport();
+	}
+	
+}

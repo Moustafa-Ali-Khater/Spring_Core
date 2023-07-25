@@ -1,0 +1,19 @@
+package com.spring.withoutXML;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class MainwithoutXML {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigue.class);
+		MasterInterface mas = context.getBean("master", MasterInterface.class);
+		Manger m = context.getBean("manger", Manger.class);
+		//mas.name();
+		System.out.println(m.getEmail());
+		context.close();
+
+	}
+
+}

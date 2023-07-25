@@ -1,0 +1,10 @@
+package com.spring.lifecycle;
+
+public class Admin implements PersonInterface{
+
+	@Override
+	public void name() {
+	
+	}
+
+}

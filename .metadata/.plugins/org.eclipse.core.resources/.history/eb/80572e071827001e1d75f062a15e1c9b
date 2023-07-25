@@ -1,0 +1,7 @@
+package com.spring.annotatios;
+
+public interface MasterInterface {
+
+	puvoid name();
+
+}

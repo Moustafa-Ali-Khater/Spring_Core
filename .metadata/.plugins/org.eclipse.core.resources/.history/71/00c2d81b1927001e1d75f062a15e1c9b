@@ -1,0 +1,15 @@
+package com.spring.annotatios;
+
+import org.springframework.stereotype.Component;
+
+public class Master implements MasterInterface{
+
+	private static final String mas = null;
+
+	@Component(mas)
+	@Override
+	public void name () {
+		System.out.println("I'm Master");
+	}
+	
+}

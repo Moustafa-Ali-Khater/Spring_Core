@@ -1,0 +1,9 @@
+package com.spring.withoutXML;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@Con
+public class SpringConfigue {
+
+}

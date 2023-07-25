@@ -1,0 +1,25 @@
+package com.spring.withoutXML;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.scheduling.aspectj.AnnotationAsyncExecutionAspect;
+
+public class MainwithoutXML {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AnnotationConfigApplicationContext context = new ClassPathXmlApplicationContext("Spring");
+		/*MasterInterface mas = context.getBean("master", MasterInterface.class);
+		mas.name();
+        //SportInterface te = context.getBean("tennisSport", SportInterface.class);
+        //te.mysport();
+		//mas.callmysport();*/
+		
+		/*CompanyInterface co = context.getBean("user", CompanyInterface.class);
+		co.display();*/
+		context.close();
+
+	}
+
+}

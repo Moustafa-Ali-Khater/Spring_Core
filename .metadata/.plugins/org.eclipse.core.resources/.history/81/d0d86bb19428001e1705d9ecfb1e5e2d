@@ -1,0 +1,20 @@
+package com.spring.lifecycle;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainLC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		PersonInterface per = context.getBean("admin", PersonInterface.class);
+		per.name();
+		PersonInterface per1 = context.getBean("admin", PersonInterface.class);
+		per1.name();
+		System.out.println(per);
+		System.out.println(per1);
+		System.out.println(per == per1);
+		context.close();
+	}
+
+}

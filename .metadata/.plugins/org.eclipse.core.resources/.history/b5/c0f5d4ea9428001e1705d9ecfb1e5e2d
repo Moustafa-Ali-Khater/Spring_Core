@@ -1,0 +1,15 @@
+package com.spring.lifecycle;
+
+import org.springframework.stereotype.Component;
+
+@Component
+@S
+public class Admin implements PersonInterface{
+
+	@Override
+	public void name() {
+	
+		System.out.println("Admin");
+	}
+
+}

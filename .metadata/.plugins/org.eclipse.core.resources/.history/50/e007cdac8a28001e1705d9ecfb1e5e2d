@@ -1,0 +1,10 @@
+package com.spring.annotations;
+
+public class Student implements CompanyInterface{
+
+	@Override
+	public void display() {
+		System.out.println("St");
+	}
+
+}

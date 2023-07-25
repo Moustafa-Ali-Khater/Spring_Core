@@ -1,0 +1,29 @@
+package com.spring.di;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Person per = new Person();
+		User us = new User();
+		us.setperson(per);
+		us.getperson();*/
+		
+		/*User us = new User();
+		us.setEmail("mostafaaliramadan08@gmail.com");
+		us.setTeam("ICBC");
+		System.out.println(us.getEmail() + "  " + us.getTeam());*/
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		UserInterface user = context.getBean("user", UserInterface.class);
+		//user.getperson();
+		UserInterface user1 = context.getBean("user", UserInterface.class);
+		System.out.println(user == user1);
+		//System.out.println(user.getEmail() + "\n" + user.getTeam());
+		context.close();
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.spring.annotatios;
+
+public class Master implements MasterInterface{
+
+	@Override
+	publ
+}

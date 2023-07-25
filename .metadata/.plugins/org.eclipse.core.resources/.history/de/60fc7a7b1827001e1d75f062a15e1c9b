@@ -1,0 +1,19 @@
+package com.spring.annotatios;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.di.UserInterface;
+
+public class MainAnn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		MasterInterface mas = context.getBean("mas", UserInterface.class);
+		System.out.println(mas.getEmail() + "\n" + mas.getTeam());
+		context.close();
+
+	}
+
+}
